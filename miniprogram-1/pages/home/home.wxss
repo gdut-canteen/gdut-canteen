@@ -1,0 +1,104 @@
+/* pages/home/home.wxss */
+.dxc {
+  display: flex;
+  padding: 15rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.school-image-1 image{
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 30rpx;
+}
+
+.school-info-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 36rpx;
+}
+
+.school-title-1{
+  font-weight: bold;
+}
+
+.dfl {
+  display: flex;
+  padding: 15rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.school-image-2 image{
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 30rpx;
+}
+
+.school-info-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 36rpx;
+}
+
+.school-title-2{
+  font-weight: bold;
+}
+
+.py {
+  display: flex;
+  padding: 15rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.school-image-3 image{
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 30rpx;
+}
+
+.school-info-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 36rpx;
+}
+
+.school-title-3{
+  font-weight: bold;
+}
+
+.jy {
+  display: flex;
+  padding: 15rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.school-image-4 image{
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 30rpx;
+}
+
+.school-info-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 36rpx;
+}
+
+.school-title-4{
+  font-weight: bold;
+}
