@@ -1,0 +1,72 @@
+/* pages/windowInfo/windowInfo.wxss */
+/*顶部界面布置*/
+.topinfo{
+  display: block;
+  padding: 15rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.images image{
+  width: 600rpx;
+  height: 900rpx;
+}
+
+.texts{
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  font-size: 48rpx;
+}
+
+.titles{
+  font-weight: bold;
+}
+
+/*中部界面布置*/
+.middle{
+  border: 1rpx solid #efefef;
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+}
+
+.tabs{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+
+.texts2{
+  font-size: 40rpx;
+}
+
+/*底部评论布置*/
+.comments{
+  display: flex;
+  flex-direction:column;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.all-info{
+  display: flex;
+  flex-direction: row;
+}
+
+.students-image image{
+  border: 1rpx solid red;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.students-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 32rpx;
+  font-weight: bold;
+}

@@ -1,2 +1,12 @@
 <!--pages/dxc/dxc.wxml-->
-<text>pages/dxc/dxc.wxml</text>
+<view class="container">
+  <navigator class="lists" wx:for="{{Lists}}" wx:key="id" url="/pages/windowInfo/windowInfo?id={{item.id}}&image={{item.imageSrc}}&title={{item.name}}&stars={{item.stars}}">
+    <view class="images">
+      <image src="{{item.imageSrc}}"></image>
+    </view>
+    <view class="texts">
+      <text class="titles">{{item.name}}</text>
+      <text>评价：{{item.stars}}</text>
+    </view>
+  </navigator>
+</view>

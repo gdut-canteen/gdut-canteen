@@ -1,1 +1,26 @@
-/* pages/dxc/dxc.wxss */
+.lists{
+  display: flex;
+  width: 90%;
+  padding: 15rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.images image{
+  width: 250rpx;
+  height: 250rpx;
+  margin-right: 30rpx;
+}
+
+.texts{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 36rpx;
+}
+
+.titles{
+  font-weight: bold;
+}

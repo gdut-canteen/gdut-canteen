@@ -6,7 +6,8 @@
     "pages/dxc/dxc",
     "pages/dfl/dfl",
     "pages/py/py",
-    "pages/jy/jy"
+    "pages/jy/jy",
+    "pages/windowInfo/windowInfo"
   ],
   "window": {
     "navigationBarTextStyle": "black",
