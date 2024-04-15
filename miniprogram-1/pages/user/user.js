@@ -1,65 +1,59 @@
 // pages/user/user.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  /* 页面的初始数据*/
   data: {
 
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  
+  /* 获取头像 */
+  closeTank(e){
+    if(!this.data.userInfo_tank){
+      this.setData({
+        userInfo_tank:true
+      })
+    }
+    else{
+      this.setData({
+        userInfo_tank:false
+      })
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  /* *获取头像 */
+  onChooseAvatar(e){
+    console.log(e);
+    this.setData({
+      avatarUrl:e.detail.avatarUrl
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  /* *获取用户昵称 */
+  getNickName(e) {
+    console.log(e);
+    this.setData({
+        nickName: e.detail.value
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  submit(e) {
+    if (!this.data.avatarUrl) {
+        return wx.showToast({
+            title: '请选择头像',
+            icon: 'error'
+        })
+    }
+    if (!this.data.nickName) {
+        return wx.showToast({
+            title: '请输入昵称',
+            icon: 'error'
+        })
+    }
+    this.setData({
+        userInfo_tank: false
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
+  /* 用户点击右上角分享 */
   onShareAppMessage() {
 
   }

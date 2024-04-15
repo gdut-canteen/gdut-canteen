@@ -1,2 +1,60 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- 头部 -->
+<!-- 已登录 -->
+<view class="top-root" wx:if="{{avatarUrl&&nickName}}">
+  <image src="{{avatarUrl}}" class="top-img"/>
+  <view class="top-name">{{nickName}}</view>
+</view>
+<!-- 未登录 -->
+<view class="top-root" wx:else>
+  <image src="/images/tabs/user.png" class="top-img"/>
+  <view class="top-name" bind:tap="closeTank">授权登录</view>
+</view>
+
+<!-- 条目 -->
+<!-- 登录后状态 -->
+<view class="item-login" wx:if="{{avatarUrl}}">
+  <view class="item">
+    <button class="item-name">修改资料</button>
+    <view class="right-arrow"></view>
+  </view>
+  <view class="item">
+    <button class="item-name">我的评论</button>
+    <view class="right-arrow"></view>
+  </view>
+</view>
+<view class="item">
+  <button class="item-name" open-type="feedback">反馈建议</button>
+  <view class="right-arrow"></view>
+</view>
+
+<!-- 头像基本信息弹窗 -->
+<view>
+  <view class="userinfo-tank-bg" bind:tap="closeTank" wx:if="{{userInfo_tank}}"></view>
+  <view class="userinfo-tank {{userInfo_tank?'transformjoin':'transformout'}}">
+    <view class="tank-title">
+      <text>申请获取您的头像、昵称</text>
+    </view>
+    <view>
+      <text>头像：</text>
+      <button class="avatar-button" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <image class="avatar-url" src="{{avatarUrl}}"/>
+        <view class="pos-photo">
+          <text class="iconfont icon-photo"></text>
+        </view>
+      </button>
+    </view>
+    <view class="tank-content">
+      <text>昵称：</text>
+      <input font-type='submit' bindblur="getNickName" placeholder="请输入昵称" type="nickname"/>
+    </view>
+    <view class="confirm-button">
+      <view>
+        <button bind:tap="closeTank">拒绝</button>
+      </view>
+      <view>
+        <button bind:tap="submit" type="primary">允许</button>
+      </view>
+    </view>
+  </view>
+</view>
