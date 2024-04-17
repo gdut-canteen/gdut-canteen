@@ -7,7 +7,8 @@
     "pages/dfl/dfl",
     "pages/py/py",
     "pages/jy/jy",
-    "pages/windowInfo/windowInfo"
+    "pages/windowInfo/windowInfo",
+	"pages/search/lostrecords"
   ],
   "window": {
     "navigationBarTextStyle": "black",

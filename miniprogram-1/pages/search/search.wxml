@@ -1,2 +1,31 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<!--搜索模块-->
+<view class="search-header">
+  <input class="search-input" bindtap="handleInputChange" />
+  <view class="search-btn" bindtap="handleSearch" >搜索</view>
+</view>
+<view>
+  <view wx:for="{{list}}" wx:key="title" class="item" id="{{item.id}}" bindtap="handleItemTap">
+    <view>{{ item }}</view>
+    <view class="item-message">{{ item.message }}</view>
+  </view>
+</view>
+
+<!--上传失物数据模块-->
+<view class="setlost">
+<button class="setlost-btn" bindtap="lostrecord"   style="width: 100rpx;">
+<text class="setlost-tx">+</text></button>
+</view>
+
+<!--失物列表显示模块-->
+<view class="lostlist">
+  <navigator class="lost.1" wx:for="{{Lists}}" wx:key="lostname" url="/pages/search/search?lostname={{Item.lostname}}&image={{Item.imageSrc}}&title={{Item.lostname}}&nowplace={{Item.nowplace}}">
+    <view class="images">
+      <image src="{{item.imgs}}"></image>
+    </view>
+    <view class="texts">
+      <text class="titles">{{Item.lostname}}</text>
+      <text>地点{{Item.nowplace}}</text>
+    </view>
+  </navigator>
+</view>

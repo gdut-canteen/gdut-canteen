@@ -1,6 +1,6 @@
 <!--pages/windowInfo/windowInfo.wxml-->
 <view class="container">
-  <!-- 顶部窗口介绍 -->>
+  <!-- 顶部窗口介绍 -->
   <view class="topinfo">
     <view class="images">
       <image src="{{query.image}}" mode="widthFix"></image>

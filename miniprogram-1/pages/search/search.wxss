@@ -1,1 +1,69 @@
-/* pages/search/search.wxss */
+page{
+  background-color: white;
+}
+.search-header{
+  width: 92rpx; 
+  height: 66rpx; 
+  display: block; 
+  box-sizing: content-box;
+}
+.search-input{
+  width: 617rpx; 
+  height: 80rpx; 
+  display: block; 
+  box-sizing: border-box;
+  border-style: groove;
+  color:rgb(55, 206, 55);
+}
+.search-btn{
+  left: 600rpx; 
+  top: -80rpx; 
+  width: 150rpx; 
+  height: 80rpx; 
+  display: block; 
+  box-sizing: border-box; 
+  text-align: center;  
+  color: white; 
+  position: relative;
+  background-color: green;
+  border-radius:5px;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-weight:bold;
+}
+.setlost{
+  width: 750rpx; 
+  height: 985rpx; 
+  display: block; 
+  box-sizing: border-box; 
+  position: relative; 
+  left: 0rpx; 
+  top: 19rpx；
+}
+.setlost-btn{ 
+  height: 104rpx; 
+  display: block; 
+  box-sizing: border-box; 
+  left: 610rpx; 
+  top: 947rpx; 
+  position: sticky;
+  border-radius: 30px;
+  background-color: rgb(213, 247, 235);
+}
+.setlost-tx{
+  font-size: 40px;
+  position: relative; 
+  left: -38rpx; 
+  top: -38rpx;
+  font-size: 40px;
+  color:green;
+}
+.lostlist{
+  width: 750rpx;
+  height: 896rpx;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  left: 0rpx;
+  top: -54rpx;
+}
