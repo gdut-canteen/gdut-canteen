@@ -55,7 +55,7 @@ page{
   position: relative; 
   left: -38rpx; 
   top: -38rpx;
-  font-size: 40px;
+  font-size: 100rpx;
   color:green;
 }
 .lostlist{
