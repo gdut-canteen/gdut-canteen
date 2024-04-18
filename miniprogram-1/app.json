@@ -8,7 +8,9 @@
     "pages/py/py",
     "pages/jy/jy",
     "pages/windowInfo/windowInfo",
-	"pages/search/lostrecords"
+    "pages/search/lostrecords",
+    "pages/user/userChange",
+    "pages/user/comments"
   ],
   "window": {
     "navigationBarTextStyle": "black",

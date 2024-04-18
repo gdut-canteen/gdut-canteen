@@ -6,7 +6,6 @@
     </view> 
     <view class="school-info-1">
       <text class="school-title-1">大学城校区</text>
-      <text>总人数：</text>
     </view>
   </navigator>
   <navigator class="dfl" url="/pages/dfl/dfl">
@@ -15,7 +14,6 @@
     </view> 
     <view class="school-info-2">
       <text class="school-title-2">东风路校区</text>
-      <text>总人数：</text>
     </view>
   </navigator>
   <navigator class="py" url="/pages/py/py">
@@ -24,7 +22,6 @@
     </view> 
     <view class="school-info-3">
       <text class="school-title-3">番禺校区</text>
-      <text>总人数：</text>
     </view>
   </navigator>
   <navigator class="jy" url="/pages/jy/jy">
@@ -33,7 +30,6 @@
     </view> 
     <view class="school-info-4">
       <text class="school-title-4">揭阳校区</text>
-      <text>总人数：</text>
     </view>
   </navigator>
 </view>

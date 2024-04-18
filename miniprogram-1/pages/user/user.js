@@ -1,8 +1,23 @@
 // pages/user/user.js
+const app = getApp();
 Page({
   /* 页面的初始数据*/
   data: {
 
+  },
+
+  /**监听界面显示 */
+  onShow() {
+    if(this.data.nickName != app.globalData.userName){
+      this.setData({
+        nickName:app.globalData.userName
+      })
+    }
+    else if(this.data.avatarUrl != app.globalData.userAvatarUrl){
+      this.setData({
+        avatarUrl:app.globalData.userAvatarUrl
+      })
+    }
   },
   
   /* 获取头像 */

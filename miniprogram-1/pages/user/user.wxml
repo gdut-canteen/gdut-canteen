@@ -14,14 +14,14 @@
 <!-- 条目 -->
 <!-- 登录后状态 -->
 <view class="item-login" wx:if="{{avatarUrl}}">
-  <view class="item">
+  <navigator class="item" url="/pages/user/userChange?avatarUrl={{avatarUrl}}&nickName={{nickName}}">
     <button class="item-name">修改资料</button>
     <view class="right-arrow"></view>
-  </view>
-  <view class="item">
+  </navigator>
+  <navigator url="/pages/user/comments" class="item">
     <button class="item-name">我的评论</button>
     <view class="right-arrow"></view>
-  </view>
+  </navigator>
 </view>
 <view class="item">
   <button class="item-name" open-type="feedback">反馈建议</button>
