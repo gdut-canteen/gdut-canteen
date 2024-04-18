@@ -6,40 +6,40 @@
     <view class="form-field">
       <label for="">失物：</label>
       <view class="field">
-        <input type="text" placeholder="请输入失物名称" lostnane= "lostname"/>
+        <input class="input" type="text" placeholder="请输入失物名称" lostnane= "lostname"/>
       </view>
     </view>
 
     <view class="form-field">
       <label for="">名称：</label>
       <view class="field">
-        <input style="width: 516rpx; height: 52rpx; display: block; box-sizing: border-box" type="text" placeholder="请输入失主名称，若无请输入0" nane= "name"/>
+        <input class="input" type="text" placeholder="请输入失主名称，若无请输入0" nane= "name"/>
       </view>
     </view>
 
     <view class="form-field">
       <label for="">发现地点：</label>
       <view class="field">
-        <input style="width: 490rpx; height: 52rpx; display: block; box-sizing: border-box" type="text" placeholder="请输入发现该失物的时间地点" lastplace= "lastplace"/>
+        <input class="input" type="text" placeholder="请输入发现该失物的时间地点" lastplace= "lastplace"/>
       </view>
     </view>
 
     <view class="form-field">
       <label for="">现在地点：</label>
       <view class="field">
-        <input style="width: 500rpx; height: 52rpx; display: block; box-sizing: border-box" type="text" placeholder="请输入该失物现在放置于何处" nowplace= "nowplace"/>
+        <input class="input" type="text" placeholder="请输入该失物现在放置于何处" nowplace= "nowplace"/>
       </view>
     </view>
 
     <view class="form-field">
       <label for="">联系方式：</label>
       <view class="field">
-        <input style="width: 508rpx; height: 52rpx; display: block; box-sizing: border-box" type="text" placeholder="请输入联系方式，若无请输入0" tel= "tel"/>
+        <input class="input" type="text" placeholder="请输入联系方式，若无请输入0" tel= "tel"/>
       </view>
     </view>
 
     <view class="img-wrap">
-    <view class="txt" style="position: relative; left: 30rpx; top: 1rpx">上传图片</view>
+    <view class="txt">上传图片</view>
     <view class="imglist" >
       <view class="item" wx:for="{{imgs}}" wx:key="item">
         <image src="{{item}}" alt=""></image>
@@ -47,8 +47,8 @@
           <image src="../../../images/icon.png"></image>
         </view>
       </view>
-      <view class="last-item" wx:if="{{imgs.length >= 3 ? false : true}}" bindtap="bindUpload"  style="width: 741rpx; height: 272rpx; display: block; box-sizing: border-box">
-        <text class="sign" style="font-size: 80px; position: relative; left: 64rpx; top: -26rpx">+</text>
+      <view class="last-item" wx:if="{{imgs.length >= 3 ? false : true}}" bindtap="bindUpload">
+        <text class="sign">+</text>
       </view>
     </view>
   </view>

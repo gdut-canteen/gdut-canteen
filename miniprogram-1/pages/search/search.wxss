@@ -26,44 +26,39 @@ page{
   color: white; 
   position: relative;
   background-color: green;
-  border-radius:5px;
-  padding-top:5px;
-  padding-bottom:5px;
+  border-radius:15rpx;
+  padding-top:15rpx;
+  padding-bottom:15rpx;
   font-weight:bold;
 }
 .setlost{
-  width: 750rpx; 
-  height: 985rpx; 
+  width: 110rpx; 
+  height: 110rpx; 
   display: block; 
   box-sizing: border-box; 
-  position: relative; 
-  left: 0rpx; 
-  top: 19rpx；
+  position: absolute;
+  left: 600rpx; 
+  top: 850rpx;
 }
 .setlost-btn{ 
-  height: 104rpx; 
-  display: block; 
-  box-sizing: border-box; 
-  left: 610rpx; 
-  top: 947rpx; 
-  position: sticky;
-  border-radius: 30px;
-  background-color: rgb(213, 247, 235);
+  height: 110rpx; 
+  border-radius: 400rpx;
+  background-color: rgb(232, 252, 244);
 }
 .setlost-tx{
-  font-size: 40px;
+  font-size: 80rpx;
   position: relative; 
   left: -38rpx; 
-  top: -38rpx;
+  top: -40rpx;
   font-size: 100rpx;
   color:green;
 }
 .lostlist{
-  width: 750rpx;
-  height: 896rpx;
+  width: 780rpx;
+  height: 950rpx;
   display: block;
   box-sizing: border-box;
   position: relative;
   left: 0rpx;
-  top: -54rpx;
+  top: 20rpx;
 }

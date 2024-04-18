@@ -1,8 +1,8 @@
 /* pages/search/lostrecords.wxss */
 .form-topic{
   position:relative;
-  left:92px;
-  font-size:23px;
+  left:170rpx;
+  font-size:60rpx;
   font-weight: bolder;
 }
 .form-field{
@@ -13,8 +13,25 @@
 .field{
   margin: 00rpx 00rpx;
 }
+.input{
+  width:508rpx;
+}
+.txt{
+  margin:50rpx 30rpx;
+}
 .submit{
   width: 500rpx !important;
+}
+.last-item{
+  width: 741rpx;
+  height: 260rpx;
+  display: block;
+  box-sizing: border-box;
+}
+.sign{
+  font-size: 170rpx;
+  position: relative; 
+  left: 64rpx; 
 }
 .wrap { 
    

@@ -11,14 +11,13 @@
   </view>
 </view>
 
-<!--上传失物数据模块-->
-<view class="setlost">
-<button class="setlost-btn" bindtap="lostrecord"   style="width: 100rpx;">
-<text class="setlost-tx">+</text></button>
-</view>
-
 <!--失物列表显示模块-->
 <view class="lostlist">
+<!--上传失物数据模块-->
+<view class="setlost">
+<button class="setlost-btn" bindtap="lostrecord" style="width: 100rpx">
+<text class="setlost-tx">+</text></button>
+</view>
   <navigator class="lost.1" wx:for="{{Lists}}" wx:key="lostname" url="/pages/search/search?lostname={{Item.lostname}}&image={{Item.imageSrc}}&title={{Item.lostname}}&nowplace={{Item.nowplace}}">
     <view class="images">
       <image src="{{item.imgs}}"></image>
