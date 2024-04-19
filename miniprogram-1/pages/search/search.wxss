@@ -13,7 +13,7 @@ page{
   display: block; 
   box-sizing: border-box;
   border-style: groove;
-  color:rgb(55, 206, 55);
+  color:rgb(6, 10, 6);
 }
 .search-btn{
   left: 600rpx; 
