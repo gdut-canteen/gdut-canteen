@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/dxc/dxc",
+    "pages/dfl/dfl",
+    "pages/py/py",
+    "pages/jy/jy",
+    "pages/windowInfo/windowInfo",
+    "pages/search/lostrecords",
+    "pages/user/userChange",
+    "pages/user/comments",
+    "pages/windowInfo/pinglun"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Gdut食堂评价",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tabs/order.png",
+        "selectedIconPath": "/images/tabs/order.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "失物招领",
+        "iconPath": "/images/tabs/search.png",
+        "selectedIconPath": "/images/tabs/search.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "/images/tabs/user.png",
+        "selectedIconPath": "/images/tabs/user.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
