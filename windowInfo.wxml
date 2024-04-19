@@ -1,0 +1,40 @@
+<!--pages/windowInfo/windowInfo.wxml-->
+<view class="container">
+  <!-- 顶部窗口介绍 -->
+  <view class="topinfo">
+    <view class="images">
+      <image src="{{query.image}}" mode="widthFix"></image>
+    </view>
+    <view class="texts" style="text-align: center;">
+      <text class="titles">{{query.title}}</text>
+      <text class="stars" >评价：{{query.stars}}</text>
+    </view>
+  </view>
+
+  <!-- 中部标志 -->
+  <view class="middle">
+    <text class="texts2">同学评论</text>
+    <image src="/images/tabs/message.png" class="tabs" />
+  </view>
+
+<view class="middle">
+    <button  bindtap="goToB" > 写评论</button>
+
+</view>
+
+  <!-- 底部同学评论 TODO:把名称、评星、评论填上 -->
+  <view class="comments">
+    <view class="all-info">
+      <view class="students-image">
+        <image src="" mode=""/>
+      </view>
+      <view class="students-info">
+       <text>{同学名称}</text>
+        <text>{同学评星}</text>
+      </view>
+    </view>
+    <view class="students-comment">
+      <text>{同学评论}</text>
+    </view>
+  </view>
+</view>
