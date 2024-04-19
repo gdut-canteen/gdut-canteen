@@ -28,8 +28,8 @@
         <text>{同学评星}</text>
       </view>
     </view>
-    <view class="students-comment">
+    <navigator class="students-comment" url="/pages/comment/comment?title={{query.title}}&stars={{query.stars}}">
       <text>{同学评论}</text>
-    </view>
+    </navigator>
   </view>
 </view>

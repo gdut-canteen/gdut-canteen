@@ -10,7 +10,8 @@
     "pages/windowInfo/windowInfo",
     "pages/search/lostrecords",
     "pages/user/userChange",
-    "pages/user/comments"
+    "pages/user/comments",
+    "pages/comment/comment"
   ],
   "window": {
     "navigationBarTextStyle": "black",

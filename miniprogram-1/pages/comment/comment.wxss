@@ -1,0 +1,31 @@
+/* pages/comment/comment.wxss */
+.tip {
+  font-size: 44rpx;
+  margin: 20rpx;
+  align-items: center;
+  color: red;
+}
+
+.star input{
+  width: 80%;
+  margin-left: 40rpx;
+  border: 1px solid gray;
+  border-radius: 20rpx;
+  padding: 5rpx 15rpx;
+}
+
+.comments-text{
+  width: 80%;
+  margin-left: 40rpx;
+  border: 1px solid gray;
+  border-radius: 20rpx;
+  padding: 5rpx 15rpx;
+}
+
+.btn {
+  color: white;
+  margin-top: 70rpx;
+  background-color: #2E8B57;
+  width: 600rpx;
+  border-radius: 50rpx;
+}

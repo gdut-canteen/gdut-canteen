@@ -16,6 +16,8 @@ App({
   globalData: {
     userInfo: null,
     userAvatarUrl: null,
-    userName: null
+    userName: null,
+    userComments:[],
+    userCommentsCount:0
   }
 })
