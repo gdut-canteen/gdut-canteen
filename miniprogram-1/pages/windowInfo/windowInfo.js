@@ -1,11 +1,13 @@
 // pages/windowInfo/windowInfo.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    query:{}
+    query:{},
+    comment:[]
   },
 
   /**
@@ -13,7 +15,19 @@ Page({
    */
   onLoad(options) {
     this.setData({
-      query: options
+      query: options,
+    })
+    var cc = wx.getStorageSync('commentCount').commentcount
+    var commentsArray = []; // 用于存储 commentdata 的数组
+    for(var i = 0; i < cc; i++){
+      var comments = 'comment' + i
+      var commentdata = wx.getStorageSync(comments)
+      if(commentdata.window == this.data.query.title){
+        commentsArray.push(commentdata);
+      }
+    }
+    this.setData({
+      comment:commentsArray
     })
   },
 
@@ -30,35 +44,17 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setData({
+      nickname:app.globalData.userName,
+      avatarUrl:app.globalData.userAvatarUrl
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
+  /**跳转到评论 */
+  write(){
+    wx.navigateTo({
+      url: '/pages/comment/comment?title=' + this.data.query.title + '&stars=' + this.data.querystars
+    })
   },
 
   /**

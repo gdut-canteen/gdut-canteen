@@ -7,4 +7,4 @@
   <view class="tip">你对{{query.title}}的评价</view>
   <input class="comments-text" type="text" bind:input="getComments" />
 </view>
-<button class="btn" bindtap="submit">提交修改</button>
+<button class="btn" bindtap="submit">提交评论</button>

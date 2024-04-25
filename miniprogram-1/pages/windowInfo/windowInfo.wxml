@@ -13,23 +13,28 @@
 
   <!-- 中部标志 -->
   <view class="middle">
-    <text class="texts2">同学评论</text>
-    <image src="/images/tabs/message.png" class="tabs" />
+    <view>
+      <text class="texts2">同学评论</text>
+      <image src="/images/tabs/message.png" class="tabs" />
+    </view>
+    <view>
+      <button bind:tap="write">写评论</button>
+    </view>
   </view>
 
   <!-- 底部同学评论 TODO:把名称、评星、评论填上 -->
-  <view class="comments">
+  <view class="comments" wx:for="{{comment}}" wx:key="id">
     <view class="all-info">
       <view class="students-image">
-        <image src="" mode=""/>
+        <image src="{{avatarUrl}}" mode=""/>
       </view>
       <view class="students-info">
-       <text>{同学名称}</text>
-        <text>{同学评星}</text>
+       <text>名字：{{nickname}}</text>
+        <text>评星：{{item.stars}}</text>
       </view>
     </view>
-    <navigator class="students-comment" url="/pages/comment/comment?title={{query.title}}&stars={{query.stars}}">
-      <text>{同学评论}</text>
-    </navigator>
+    <view class="students-comment">
+      <text>评论：{{item.comment}}</text>
+    </view>
   </view>
 </view>

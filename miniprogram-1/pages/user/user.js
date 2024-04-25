@@ -66,6 +66,8 @@ Page({
     this.setData({
         userInfo_tank: false
     })
+    app.globalData.userAvatarUrl = this.data.avatarUrl;
+    app.globalData.userName = this.data.nickName;
   },
 
   /* 用户点击右上角分享 */

@@ -61,7 +61,7 @@
 }
 
 .students-image image{
-  border: 1rpx solid red;
+  border-radius: 50%;
   width: 100rpx;
   height: 100rpx;
 }
