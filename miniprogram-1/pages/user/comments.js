@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    comment:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    var cc = wx.getStorageSync('commentCount').commentcount
+    var commentsArray = []; // 用于存储 commentdata 的数组
+    for(var i = 0; i < cc; i++){
+      var comments = 'comment' + i
+      var commentdata = wx.getStorageSync(comments)
+      commentsArray.push(commentdata);
+    }
+    this.setData({
+      comment:commentsArray
+    })
   },
 
   /**

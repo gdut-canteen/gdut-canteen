@@ -1,1 +1,19 @@
 /* pages/user/comments.wxss */
+.comments{
+  display: flex;
+  flex-direction:column;
+  width: 90%;
+  padding: 15rpx;
+  border: 2rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+
+.students-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 36rpx;
+  font-weight: bold;
+}

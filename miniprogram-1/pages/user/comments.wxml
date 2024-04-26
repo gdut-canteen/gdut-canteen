@@ -1,2 +1,10 @@
 <!--pages/user/comments.wxml-->
-<text>pages/user/comments.wxml</text>
+<view class="comments" wx:for="{{comment}}" wx:key="id">
+    <view class="students-info">
+      <text>食堂：{{item.window}}</text>
+      <text>评星：{{item.stars}}</text>
+    </view>
+  <view class="students-comment">
+    <text>评论：{{item.comment}}</text>
+  </view>
+</view>
